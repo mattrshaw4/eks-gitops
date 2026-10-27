@@ -1,0 +1,4 @@
+# Keep LF line endings in the repo so YAML, Terraform and shell files behave the same on Windows and in AWS
+* text=auto eol=lf
+*.png binary
+*.jpg binary

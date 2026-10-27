@@ -1,0 +1,19 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+*.tfvars
+!example.tfvars
+.terraform.lock.hcl.bak
+
+# Kubernetes / local
+kubeconfig*
+*.kubeconfig
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
