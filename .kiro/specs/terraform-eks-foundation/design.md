@@ -432,8 +432,8 @@ Two separate `notification` blocks are required — one for `FORECASTED` at 100%
 | `cluster_endpoint` | `aws_eks_cluster.main.endpoint` | API server endpoint URL |
 | `cluster_ca_data` | `aws_eks_cluster.main.certificate_authority[0].data` | Base64-encoded CA certificate |
 | `cluster_oidc_issuer_url` | `aws_eks_cluster.main.identity[0].oidc[0].issuer` | OIDC issuer for IRSA configuration |
-| `region` | `data.aws_region.current.name` | AWS region the cluster was deployed to |
-| `kubeconfig_command` | `"aws eks update-kubeconfig --name ${aws_eks_cluster.main.name} --region ${data.aws_region.current.name} --profile eks-lab"` | Ready-to-run command to configure kubectl |
+| `region` | `data.aws_region.current.region` | AWS region the cluster was deployed to |
+| `kubeconfig_command` | `"aws eks update-kubeconfig --name ${aws_eks_cluster.main.name} --region ${data.aws_region.current.region} --profile eks-lab"` | Ready-to-run command to configure kubectl |
 
 All outputs are marked `sensitive = false` — none contain credentials.
 
