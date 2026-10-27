@@ -7,7 +7,7 @@ Create the `infra/` directory and all Terraform configuration files that provisi
 ## Tasks
 
 - [ ] 1. Scaffold the `infra/` directory with provider and version constraints
-  - [ ] 1.1 Create `infra/terraform.tf` with required_version and AWS provider pin
+  - [x] 1.1 Create `infra/terraform.tf` with required_version and AWS provider pin
     - Declare `terraform {}` block with `required_version = ">= 1.9.0"`
     - Declare `required_providers` block: `hashicorp/aws ~> 6.0`
     - _Requirements: 5.1_

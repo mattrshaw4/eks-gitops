@@ -1,0 +1,17 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create `infra/terraform.tf` with required_version and AWS provider pin": [
+      {
+        "executionId": "8bc9b924-fdf8-4d96-a0a8-ad69f95ea7c9",
+        "chatSessionId": "sess_3da08882-4100-4aa1-9ad9-03a3960b02d4",
+        "timestamp": 1793124552057
+      },
+      {
+        "executionId": "8bc9b924-fdf8-4d96-a0a8-ad69f95ea7c9",
+        "chatSessionId": "sess_3da08882-4100-4aa1-9ad9-03a3960b02d4",
+        "timestamp": 1793124562621
+      }
+    ]
+  }
+}
