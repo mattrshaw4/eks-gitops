@@ -6,19 +6,19 @@ Create the `infra/` directory and all Terraform configuration files that provisi
 
 ## Tasks
 
-- [ ] 1. Scaffold the `infra/` directory with provider and version constraints
+- [x] 1. Scaffold the `infra/` directory with provider and version constraints
   - [x] 1.1 Create `infra/terraform.tf` with required_version and AWS provider pin
     - Declare `terraform {}` block with `required_version = ">= 1.9.0"`
     - Declare `required_providers` block: `hashicorp/aws ~> 6.0`
     - _Requirements: 5.1_
 
-  - [ ] 1.2 Create `infra/providers.tf` with AWS provider configuration
+  - [x] 1.2 Create `infra/providers.tf` with AWS provider configuration
     - Declare `provider "aws"` with `region = var.region`
     - Add `default_tags` block setting `project = "eks-gitops"` and `owner = "matt-shaw"`
     - _Requirements: 6.1, 6.2, 5.2_
 
-- [ ] 2. Declare all input variables and data sources
-  - [ ] 2.1 Create `infra/variables.tf` with all nine declared variables
+- [x] 2. Declare all input variables and data sources
+  - [x] 2.1 Create `infra/variables.tf` with all nine declared variables
     - Declare `region` (string, required), `cluster_name` (string, default `"eks-lab"`), `kubernetes_version` (string, default `"1.36"`)
     - Declare `vpc_cidr` (string, default `"10.0.0.0/16"`), `availability_zones` (list(string), default `[]`) with validation enforcing length 0 or 2
     - Declare `api_allowed_cidrs` (list(string), required) with validation rejecting `"0.0.0.0/0"` and error message instructing operator to supply specific CIDR ranges
@@ -26,7 +26,7 @@ Create the `infra/` directory and all Terraform configuration files that provisi
     - Every variable must have a non-empty `description` and explicit `type`
     - _Requirements: 5.1, 5.2, 5.3, 4.2, 4.3_
 
-  - [ ] 2.2 Create `infra/data.tf` with all four data source lookups
+  - [x] 2.2 Create `infra/data.tf` with all four data source lookups
     - Declare `data.aws_availability_zones.available` with `state = "available"` and `filter` block for `opt-in-not-required`
     - Declare `data.aws_caller_identity.current`
     - Declare `data.aws_iam_roles.identity_center_admin` with `name_regex = "AWSReservedSSO_AdministratorAccess_.*"` and `path_prefix = "/aws-reserved/sso.amazonaws.com/"`
