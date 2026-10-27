@@ -1,6 +1,5 @@
 ---
-inclusion: fileMatch
-fileMatchPattern: "**/*.tf"
+inclusion: always
 ---
 
 # Terraform Standards (hard-won lessons)
